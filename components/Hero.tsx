@@ -1,6 +1,8 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import MagicButton from "./ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa";
 
 export const Hero = () => {
   return (
@@ -25,7 +27,20 @@ export const Hero = () => {
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Welcome to my official Website
           </h2>
-          <TextGenerateEffect className="effect" words="Behnam Sepehri"/>
+          <TextGenerateEffect
+            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            words="My name is Behnam"
+          />
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            I&apos;m a Front-End developer base in Netherlands
+          </p>
+          <a href="#about">
+            <MagicButton
+              title="Show my works"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
     </div>
