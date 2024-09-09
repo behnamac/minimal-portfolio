@@ -1,5 +1,5 @@
 import { BentoGrid, BentoGridItem } from "../ui/BentoGrid";
-import { gridItems } from "@/app/Data/data";
+import { gridItems } from "@/app/data/data";
 
 const Grid = () => {
   const items = gridItems.map(
